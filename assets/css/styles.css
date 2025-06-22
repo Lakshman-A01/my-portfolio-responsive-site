@@ -867,5 +867,113 @@ body {
 .resume-button:hover {
     background-color: hsl(0, 100%, 50%);
 }
+/* MOBILE ENHANCEMENTS */
+@media screen and (max-width: 768px) {
+  /* Container spacing */
+  .bd-grid {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Section titles spacing */
+  .section {
+    padding: 2rem 0;
+  }
+
+  /* Home section adjustments */
+  .home {
+    padding: 3rem 0 2rem;
+    text-align: center;
+  }
+  .home__title {
+    font-size: 2rem;
+  }
+  .home__social {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .home__social-icon {
+    margin: 0 0.5rem;
+  }
+  .home__img {
+    position: static;
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem auto 0;
+  }
+
+  /* About section */
+  .about__container {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+  .about__img img {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /* Education & Projects */
+  .education__content,
+  .education__content.reverse,
+  .project__content,
+  .project__content.reverse {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .education__img,
+  .project__img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Skills section */
+  .skills__container {
+    grid-template-columns: 1fr !important;
+  }
+  .skills__data {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Hobbies section */
+  .hobbies__container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Contact form */
+  .contact__form {
+    width: 100% !important;
+    padding: 0 1rem;
+  }
+
+  /* Footer */
+  .footer__icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__icon {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* EXTRA SMALL SCREENS */
+@media screen and (max-width: 480px) {
+  .home__title {
+    font-size: 1.75rem;
+  }
+  .resume-button,
+  .button,
+  .submit-button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+  .hobbies__container {
+    grid-template-columns: 1fr !important;
+  }
+}
 
 
